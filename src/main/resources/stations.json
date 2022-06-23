@@ -1,0 +1,86 @@
+[
+    {
+      "stationName": "AHMEDABAD",
+      "stationCode": "ADI"
+    },
+    {
+      "stationName": "AJMER",
+      "stationCode": "AII"
+    },
+    {
+      "stationName": "AGRA FORT",
+      "stationCode": "AF"
+    },
+    {
+      "stationName": "AMRITSAR",
+      "stationCode": "ASR"
+    },
+    {
+      "stationName": "Bangalore East",
+      "stationCode": "BNCE"
+    },
+    {
+      "stationName": "Bombay VT [former]",
+      "stationCode": "BB"
+    },
+    {
+      "stationName": "BANDRA TERMINUS",
+      "stationCode": "BDTS"
+    },
+    {
+      "stationName": "BANGALORE CITY",
+      "stationCode": "SBC"
+    },
+    {
+      "stationName": "DELHI",
+      "stationCode": "DLI"
+    },
+    {
+      "stationName": "DEHRADUN",
+      "stationCode": "DDN"
+    },
+    {
+      "stationName": "Dadar[wr]",
+      "stationCode": "DDR"
+    },
+    {
+      "stationName": "MADGAON (GOA)",
+      "stationCode": "MAO"
+    },
+    {
+      "stationName": "KANNIYAKUMARI",
+      "stationCode": "CAPE"
+    },
+    {
+      "stationName": "KANNUR",
+      "stationCode": "CAN"
+    },
+    {
+      "stationName": "KANPUR CENTRAL",
+      "stationCode": "CNB"
+    },
+    {
+      "stationName": "KODAIKANAL ROAD",
+      "stationCode": "KQN"
+    },
+    {
+      "stationName": "LOKMANYA TILAK (T)",
+      "stationCode": "LTT"
+    },
+    {
+      "stationName": "NEW DELHI",
+      "stationCode": "NDLS"
+    },
+    {
+      "stationName": "NIZAMABAD",
+      "stationCode": "NZB"
+    },
+    {
+      "stationName": "PUNE Jn.",
+      "stationCode": "PUNE"
+    },
+    {
+      "stationName": "SECUNDERABAD",
+      "stationCode": "SC"
+    }
+  ]

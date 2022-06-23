@@ -1,0 +1,380 @@
+[
+  {
+    "name": "TRAIN1",
+    "code": "TRN1",
+    "tierCost": {
+      "sleeper": 1297,
+      "chair": 1296,
+      "firstAC": 1301,
+      "secondAC": 1300,
+      "chairAC": 1298,
+      "thirdAC": 1299
+    },
+    "sleeper": true,
+    "thirdAC": false,
+    "secondAC": false,
+    "firstAC": false,
+    "chair": true,
+    "chairAC": false
+  },
+  {
+    "name": "TRAIN2",
+    "code": "TRN2",
+    "tierCost": {
+      "sleeper": 1298,
+      "chair": 1297,
+      "firstAC": 1302,
+      "secondAC": 1301,
+      "chairAC": 1299,
+      "thirdAC": 1300
+    },
+    "sleeper": true,
+    "thirdAC": false,
+    "secondAC": false,
+    "firstAC": false,
+    "chair": true,
+    "chairAC": false
+  },
+  {
+    "name": "TRAIN3",
+    "code": "TRN3",
+    "tierCost": {
+      "sleeper": 1299,
+      "chair": 1298,
+      "firstAC": 1303,
+      "secondAC": 1302,
+      "chairAC": 1300,
+      "thirdAC": 1301
+    },
+    "sleeper": true,
+    "thirdAC": false,
+    "secondAC": false,
+    "firstAC": false,
+    "chair": true,
+    "chairAC": true
+  },
+  {
+    "name": "TRAIN4",
+    "code": "TRN4",
+    "tierCost": {
+      "sleeper": 1300,
+      "chair": 1299,
+      "firstAC": 1304,
+      "secondAC": 1303,
+      "chairAC": 1301,
+      "thirdAC": 1302
+    },
+    "sleeper": true,
+    "thirdAC": false,
+    "secondAC": false,
+    "firstAC": false,
+    "chair": true,
+    "chairAC": true
+  },
+  {
+    "name": "TRAIN5",
+    "code": "TRN5",
+    "tierCost": {
+      "sleeper": 1301,
+      "chair": 1300,
+      "firstAC": 1305,
+      "secondAC": 1304,
+      "chairAC": 1302,
+      "thirdAC": 1303
+    },
+    "sleeper": true,
+    "thirdAC": true,
+    "secondAC": true,
+    "firstAC": false,
+    "chair": false,
+    "chairAC": true
+  },
+  {
+    "name": "TRAIN6",
+    "code": "TRN6",
+    "tierCost": {
+      "sleeper": 1302,
+      "chair": 1301,
+      "firstAC": 1306,
+      "secondAC": 1305,
+      "chairAC": 1303,
+      "thirdAC": 1304
+    },
+    "sleeper": true,
+    "thirdAC": true,
+    "secondAC": false,
+    "firstAC": false,
+    "chair": false,
+    "chairAC": false
+  },
+  {
+    "name": "TRAIN7",
+    "code": "TRN7",
+    "tierCost": {
+      "sleeper": 1303,
+      "chair": 1302,
+      "firstAC": 1307,
+      "secondAC": 1306,
+      "chairAC": 1304,
+      "thirdAC": 1305
+    },
+    "sleeper": true,
+    "thirdAC": true,
+    "secondAC": true,
+    "firstAC": false,
+    "chair": false,
+    "chairAC": true
+  },
+  {
+    "name": "TRAIN8",
+    "code": "TRN8",
+    "tierCost": {
+      "sleeper": 1304,
+      "chair": 1303,
+      "firstAC": 1308,
+      "secondAC": 1307,
+      "chairAC": 1305,
+      "thirdAC": 1306
+    },
+    "sleeper": true,
+    "thirdAC": true,
+    "secondAC": false,
+    "firstAC": false,
+    "chair": true,
+    "chairAC": true
+  },
+  {
+    "name": "TRAIN9",
+    "code": "TRN9",
+    "tierCost": {
+      "sleeper": 1305,
+      "chair": 1304,
+      "firstAC": 1309,
+      "secondAC": 1308,
+      "chairAC": 1306,
+      "thirdAC": 1307
+    },
+    "sleeper": true,
+    "thirdAC": true,
+    "secondAC": false,
+    "firstAC": false,
+    "chair": false,
+    "chairAC": true
+  },
+  {
+    "name": "TRAIN10",
+    "code": "TRN10",
+    "tierCost": {
+      "sleeper": 1306,
+      "chair": 1305,
+      "firstAC": 1310,
+      "secondAC": 1309,
+      "chairAC": 1307,
+      "thirdAC": 1308
+    },
+    "sleeper": true,
+    "thirdAC": true,
+    "secondAC": true,
+    "firstAC": true,
+    "chair": false,
+    "chairAC": true
+  },
+  {
+    "name": "TRAIN11",
+    "code": "TRN11",
+    "tierCost": {
+      "sleeper": 1307,
+      "chair": 1306,
+      "firstAC": 1311,
+      "secondAC": 1310,
+      "chairAC": 1308,
+      "thirdAC": 1309
+    },
+    "sleeper": true,
+    "thirdAC": true,
+    "secondAC": false,
+    "firstAC": false,
+    "chair": true,
+    "chairAC": true
+  },
+  {
+    "name": "TRAIN12",
+    "code": "TRN12",
+    "tierCost": {
+      "sleeper": 1308,
+      "chair": 1307,
+      "firstAC": 1312,
+      "secondAC": 1311,
+      "chairAC": 1309,
+      "thirdAC": 1310
+    },
+    "sleeper": true,
+    "thirdAC": true,
+    "secondAC": false,
+    "firstAC": false,
+    "chair": false,
+    "chairAC": false
+  },
+  {
+    "name": "TRAIN13",
+    "code": "TRN13",
+    "tierCost": {
+      "sleeper": 1309,
+      "chair": 1308,
+      "firstAC": 1313,
+      "secondAC": 1312,
+      "chairAC": 1310,
+      "thirdAC": 1311
+    },
+    "sleeper": true,
+    "thirdAC": true,
+    "secondAC": false,
+    "firstAC": false,
+    "chair": true,
+    "chairAC": true
+  },
+  {
+    "name": "TRAIN14",
+    "code": "TRN14",
+    "tierCost": {
+      "sleeper": 1310,
+      "chair": 1309,
+      "firstAC": 1314,
+      "secondAC": 1313,
+      "chairAC": 1311,
+      "thirdAC": 1312
+    },
+    "sleeper": true,
+    "thirdAC": true,
+    "secondAC": false,
+    "firstAC": true,
+    "chair": true,
+    "chairAC": true
+  },
+  {
+    "name": "TRAIN15",
+    "code": "TRN15",
+    "tierCost": {
+      "sleeper": 1311,
+      "chair": 1310,
+      "firstAC": 1315,
+      "secondAC": 1314,
+      "chairAC": 1312,
+      "thirdAC": 1313
+    },
+    "sleeper": true,
+    "thirdAC": false,
+    "secondAC": false,
+    "firstAC": false,
+    "chair": true,
+    "chairAC": false
+  },
+  {
+    "name": "TRAIN16",
+    "code": "TRN16",
+    "tierCost": {
+      "sleeper": 1317,
+      "chair": 1316,
+      "firstAC": 1321,
+      "secondAC": 1320,
+      "chairAC": 1318,
+      "thirdAC": 1319
+    },
+    "sleeper": false,
+    "thirdAC": false,
+    "secondAC": true,
+    "firstAC": true,
+    "chair": false,
+    "chairAC": false
+  },
+  {
+    "name": "TRAIN17",
+    "code": "TRN17",
+    "tierCost": {
+      "sleeper": 1313,
+      "chair": 1312,
+      "firstAC": 1317,
+      "secondAC": 1316,
+      "chairAC": 1314,
+      "thirdAC": 1315
+    },
+    "sleeper": true,
+    "thirdAC": true,
+    "secondAC": true,
+    "firstAC": false,
+    "chair": false,
+    "chairAC": false
+  },
+  {
+    "name": "TRAIN18",
+    "code": "TRN18",
+    "tierCost": {
+      "sleeper": 1314,
+      "chair": 1313,
+      "firstAC": 1318,
+      "secondAC": 1317,
+      "chairAC": 1315,
+      "thirdAC": 1316
+    },
+    "sleeper": true,
+    "thirdAC": true,
+    "secondAC": true,
+    "firstAC": false,
+    "chair": false,
+    "chairAC": false
+  },
+  {
+    "name": "TRAIN19",
+    "code": "TRN19",
+    "tierCost": {
+      "sleeper": 1315,
+      "chair": 1314,
+      "firstAC": 1319,
+      "secondAC": 1318,
+      "chairAC": 1316,
+      "thirdAC": 1317
+    },
+    "sleeper": false,
+    "thirdAC": true,
+    "secondAC": true,
+    "firstAC": true,
+    "chair": false,
+    "chairAC": false
+  },
+  {
+    "name": "TRAIN20",
+    "code": "TRN20",
+    "tierCost": {
+      "sleeper": 1316,
+      "chair": 1315,
+      "firstAC": 1320,
+      "secondAC": 1319,
+      "chairAC": 1317,
+      "thirdAC": 1318
+    },
+    "sleeper": false,
+    "thirdAC": false,
+    "secondAC": true,
+    "firstAC": true,
+    "chair": false,
+    "chairAC": false
+  },
+  {
+    "name": "TRAIN21",
+    "code": "TRN21",
+    "tierCost": {
+      "sleeper": 1312,
+      "chair": 1311,
+      "firstAC": 1316,
+      "secondAC": 1315,
+      "chairAC": 1313,
+      "thirdAC": 1314
+    },
+    "sleeper": true,
+    "thirdAC": true,
+    "secondAC": false,
+    "firstAC": true,
+    "chair": false,
+    "chairAC": false
+  }
+]
