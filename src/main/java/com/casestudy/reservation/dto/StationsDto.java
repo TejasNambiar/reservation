@@ -11,7 +11,12 @@ import org.springframework.stereotype.Component;
 @AllArgsConstructor
 @NoArgsConstructor
 public class StationsDto {
-
+    private int id;
     private String stationName;
     private String stationCode;
+
+    public StationsDto(String stationName, String stationCode) {
+        this.stationName = stationName;
+        this.stationCode = stationCode;
+    }
 }

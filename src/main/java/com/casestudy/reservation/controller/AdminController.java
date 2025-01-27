@@ -19,6 +19,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.CollectionUtils;
+import org.springframework.util.ObjectUtils;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -27,6 +28,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
+
+import static com.casestudy.reservation.util.Constants.FAILURE_DB_MESSAGE;
 
 @Slf4j
 @RestController
@@ -68,9 +71,18 @@ public class AdminController<T> {
         return ResponseEntity.ok(response);
     }
 
-    @GetMapping("/stationDetails")
-    public List<Stations> getStationDetails() {
-        return stationRepository.findAll();
+    @GetMapping("/stationByCode")
+    public ResponseEntity<ResponseDTO<StationsDto>> getStationDetails(@RequestParam (value = "code", required = true) String code) {
+        StationsDto dto = stationRepository.getStationByCode(code);
+        ResponseDTO<StationsDto> response = new ResponseDTO<>();
+        if(!ObjectUtils.isEmpty(dto)) {
+            response.setMessage("SUCCESS");
+            response.setData(dto);
+        }else{
+            response.setMessage("FAILURE");
+            response.setData(null);
+        }
+        return ResponseEntity.ok(response);
     }
 
 //    @GetMapping("/scheduleDetails")
@@ -112,16 +124,24 @@ public class AdminController<T> {
 //    }
 
     @PostMapping("/addStation")
-    public ResponseDTO<T> addStationInfo(@RequestBody StationsDto stationsDto) {
+    public ResponseEntity<ResponseDTO<Stations>>  addStationInfo(@RequestBody StationsDto stationsDto) {
+
+        ResponseDTO<Stations> response = new ResponseDTO<>();
 
         if (checkIsTrue.insertionNullCheck((T) stationsDto)) {
             Stations pojo = (Stations) pojoConverter.conversionCheckPoint(stationsDto);
-            stationRepository.save(pojo);
-            responseDTO.setMessage("Station details of " + stationsDto.getStationName().toUpperCase() + Constants.SUCCESS_DB_TRAIL_MESSAGE);
-            return responseDTO;
+            pojo = stationRepository.save(pojo);
+            String message = "Station details of " + stationsDto.getStationName().toUpperCase() + Constants.SUCCESS_DB_TRAIL_MESSAGE;
+            if (!ObjectUtils.isEmpty(pojo)) {
+                response.setMessage(message);
+                response.setData(pojo);
+            } else {
+                response.setMessage(FAILURE_DB_MESSAGE);
+            }
+        } else {
+            response.setMessage(FAILURE_DB_MESSAGE);
         }
-        responseDTO.setMessage(Constants.FAILURE_DB_MESSAGE);
-        return responseDTO;
+        return ResponseEntity.ok(response);
     }
 
     @PostMapping("/addAdmin")
@@ -133,7 +153,7 @@ public class AdminController<T> {
             adminRepository.save(pojo);
             return "Admin details of " + adminDto.getFirstName().toUpperCase() + " " + adminDto.getLastName().toUpperCase() + Constants.SUCCESS_DB_TRAIL_MESSAGE;
         }
-        return Constants.FAILURE_DB_MESSAGE;
+        return FAILURE_DB_MESSAGE;
     }
 
 //    @PostMapping("/addFileData")

@@ -61,12 +61,12 @@ class DtoPojoConverterTest {
 
         DtoPojoConverter<Object> dtoPojoConverter = new DtoPojoConverter<>();
         assertNull(
-                ((Stations) dtoPojoConverter.conversionCheckPoint(new StationsDto("Station Name", "Station Code"))).getId());
+                ((Stations) dtoPojoConverter.conversionCheckPoint(new StationsDto(1,"Station Name", "Station Code"))).getId());
         assertEquals("STATION NAME",
-                ((Stations) dtoPojoConverter.conversionCheckPoint(new StationsDto("Station Name", "Station Code")))
+                ((Stations) dtoPojoConverter.conversionCheckPoint(new StationsDto(1,"Station Name", "Station Code")))
                         .getStationName());
         assertEquals("STATION CODE",
-                ((Stations) dtoPojoConverter.conversionCheckPoint(new StationsDto("Station Name", "Station Code")))
+                ((Stations) dtoPojoConverter.conversionCheckPoint(new StationsDto(1,"Station Name", "Station Code")))
                         .getStationCode());
     }
 
@@ -620,7 +620,7 @@ class DtoPojoConverterTest {
 
         DtoPojoConverter<Object> dtoPojoConverter = new DtoPojoConverter<>();
         Stations actualStationPojoConversionResult = dtoPojoConverter
-                .stationPojoConversion(new StationsDto("Station Name", "Station Code"));
+                .stationPojoConversion(new StationsDto(1,"Station Name", "Station Code"));
         assertNull(actualStationPojoConversionResult.getId());
         assertEquals("STATION NAME", actualStationPojoConversionResult.getStationName());
         assertEquals("STATION CODE", actualStationPojoConversionResult.getStationCode());
