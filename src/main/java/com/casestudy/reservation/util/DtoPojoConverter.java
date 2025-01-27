@@ -8,7 +8,6 @@ import com.casestudy.reservation.entity.Admin;
 import com.casestudy.reservation.entity.Schedule;
 import com.casestudy.reservation.entity.Stations;
 import com.casestudy.reservation.entity.Train;
-import com.casestudy.reservation.repository.TrainsRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,8 +16,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class DtoPojoConverter<T> {
 
-    @Autowired
-    TrainsRepository repository;
+//    @Autowired
+//    TrainsRepository repository;
 
     public Object conversionCheckPoint(T object) {
         switch (object.getClass().getSimpleName()) {
